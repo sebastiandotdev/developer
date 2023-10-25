@@ -13,6 +13,8 @@
     "@builder.io/qwik": "1.2.6"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.9.0",
+    "@typescript-eslint/parser": "6.9.0",
     "eslint": "8.52.0",
     "prettier": "3.0.3",
     "typescript": "5.0.2",
