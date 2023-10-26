@@ -21,6 +21,5 @@
       "lib/*": ["./lib/*"]
     }
   },
-  "files": ["./.eslintrc"],
   "include": ["src", "./*.d.ts", "./*.config.ts"]
 }
