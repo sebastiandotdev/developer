@@ -1,5 +1,5 @@
 {
-  "name": "network",
+  "name": "developer",
   "description": "The red social Open Sources Built with love and nostalgia 🐱",
   "scripts": {
     "build.client": "vite build",
@@ -10,11 +10,12 @@
     "preview": "qwik build preview && vite preview --open",
     "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
     "build": "qwik build",
+    "clean": "rimraf ./dist && rimraf ./server && rimraf ./tmp && rimraf ./node_modules && pnpm install --frozen-lockfile",
     "start": "vite --open --mode ssr",
     "lint": "eslint . --fix --ext .ts,.tsx",
-    "dev": "vite --mode ssr",
+    "qwik": "qwik",
     "fmt": "prettier --write .",
-    "qwik": "qwik"
+    "dev": "vite --mode ssr"
   },
   "devDependencies": {
     "@builder.io/qwik": "1.2.14",
@@ -28,6 +29,7 @@
     "eslint-plugin-qwik": "1.2.14",
     "postcss": "8.4.31",
     "prettier": "3.0.3",
+    "rimraf": "5.0.5",
     "tailwindcss": "3.3.5",
     "typescript": "5.2.2",
     "undici": "5.26.5",
