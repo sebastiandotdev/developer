@@ -1,23 +1,41 @@
 {
-  "name": "ls",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "lint": "prettier . --write --cache && eslint . --fix --ext .ts,.tsx"
+  "name": "my-qwik-basic-starter",
+  "description": "Demo App with Routing built-in (recommended)",
+  "engines": {
+    "node": ">=15.0.0"
   },
-  "dependencies": {
-    "@builder.io/qwik": "1.2.6"
+  "private": true,
+  "trustedDependencies": [
+    "sharp"
+  ],
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.preview": "vite build --ssr src/entry.preview.tsx",
+    "build.types": "tsc --incremental --noEmit",
+    "deploy": "echo 'Run \"npm run qwik add\" to install a server adapter'",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint . --fix --ext .ts,.tsx",
+    "preview": "qwik build preview && vite preview --open",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik"
   },
   "devDependencies": {
+    "@builder.io/qwik": "1.2.14",
+    "@builder.io/qwik-city": "1.2.14",
+    "@types/eslint": "8.44.6",
+    "@types/node": "20.8.9",
     "@typescript-eslint/eslint-plugin": "6.9.0",
     "@typescript-eslint/parser": "6.9.0",
     "eslint": "8.52.0",
+    "eslint-plugin-qwik": "1.2.14",
     "prettier": "3.0.3",
-    "typescript": "5.0.2",
-    "vite": "4.4.5"
+    "typescript": "5.2.2",
+    "undici": "5.26.5",
+    "vite": "4.5.0",
+    "vite-tsconfig-paths": "4.2.1"
   }
 }

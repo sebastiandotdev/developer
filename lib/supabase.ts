@@ -1,1 +1,1 @@
-// # For supabase
+// # config supabase
