@@ -16,10 +16,8 @@
     "isolatedModules": true,
     "outDir": "tmp",
     "noEmit": true,
-    "types": ["node", "vite/client"],
-    "paths": {
-      "lib/*": ["./lib/*"]
-    }
+    "types": ["node", "vite/client", "vitest/globals"],
+    "paths": {}
   },
-  "include": ["src", "./*.d.ts", "./*.config.ts", "lib"]
+  "include": ["src", "./*.d.ts", "./*.config.ts", "src/lib"]
 }
