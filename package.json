@@ -17,6 +17,19 @@
     "fmt": "prettier --write .",
     "dev": "vite --mode ssr"
   },
+  "author": {
+    "email": "johancs.mm@gmail.com",
+    "name": "Johan Sebastian",
+    "url": "https://github.com/castrogarciajs"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castrogarciajs/developer.git"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.38.4"
+  },
   "devDependencies": {
     "@builder.io/qwik": "1.2.14",
     "@builder.io/qwik-city": "1.2.14",
