@@ -4,7 +4,6 @@ import {
   RouterOutlet,
   ServiceWorkerRegister,
 } from '@builder.io/qwik-city'
-
 import './global.css'
 
 export default component$(() => {
