@@ -3,15 +3,16 @@ import type { DocumentHead } from '@builder.io/qwik-city'
 import rocketSvg from '../media/svg/rocket.svg'
 import bellSvg from '../media/svg/bell.svg'
 import githubPng from '../media/github.png'
+import AppImage from '../components/AppImage'
 
 export default component$(() => {
   return (
     <>
       <header class='flex items-center justify-end h-[--size] px-4 sm:px-6 lg:px-8 max-w-7xl'>
         <a href='#' class='pt-6'>
-          <img
+          <AppImage
             src={githubPng}
-            alt='Github profile castrogarciajs'
+            alt='The github project'
             width={28}
             height={28}
           />
@@ -35,14 +36,14 @@ export default component$(() => {
                 href='#'
                 class='rounded-md text-md gap-x-2.5 px-4 py-2.5 shadow-sm text-white bg-aqua inline-flex items-center font-poppins'
               >
-                <img src={rocketSvg} alt='rocket' width={28} height={28} />
+                <AppImage src={rocketSvg} alt='rocket' width={28} height={28} />
                 Sing In
               </a>
               <a
                 href='#'
                 class='text-base gap-x-2.5 px-4 py-2.5 shadow-md inline-flex items-center font-poppins rounded-md'
               >
-                <img src={bellSvg} alt='bell' width={28} height={28} />
+                <AppImage src={bellSvg} alt='bell' width={28} height={28} />
                 Sing Up
               </a>
             </div>

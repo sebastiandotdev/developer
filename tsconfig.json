@@ -19,5 +19,5 @@
     "types": ["node", "vite/client", "vitest/globals"],
     "paths": {}
   },
-  "include": ["src", "./*.d.ts", "./*.config.ts", "src/lib"]
+  "include": ["src", "./*.d.ts", "./*.config.ts", "src/lib", "test/"]
 }
