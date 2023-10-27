@@ -1,7 +1,6 @@
 # Social Developer ⚡️
 
 The red social Open Sources Built with love and nostalgia 🐱
----
 
 ## Guide
 
