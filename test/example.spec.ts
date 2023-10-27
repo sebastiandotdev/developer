@@ -1,3 +1,3 @@
 test('example test with vitest', () => {
-    expect(true).toBe(true)
+  expect(true).toBe(true)
 })
